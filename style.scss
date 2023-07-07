@@ -40,7 +40,6 @@
         display: flex;
         justify-content: end;
         list-style: none;
-        padding: 0;
         margin: 0 0 20px 0;
         font-size: 20px;
         font-weight: 300;
@@ -77,11 +76,11 @@
 }
 
 
-.main-conteiner{
+.main-conteiner {
     display: flex;
 }
 
-.aside{
+.aside {
     width: 35%;
 }
 
@@ -89,12 +88,33 @@
     margin: 30px 0 25px 50px;
     color: rgb(255, 199, 21);
     font-weight: 500;
+    border-bottom: 3px solid rgb(255, 199, 21);
 }
 
 .aside ul {
     margin: 0 20px 0 0;
+    padding: 0;
     font-size: 18px;
     font-weight: 400;
+}
+
+.aside li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 43px;
+    list-style: none;
+}
+
+.aside li::before {
+    content: "";
+    width: 5px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: rgb(255, 199, 21);
 }
 
 .main {
