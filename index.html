@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
-
 
   <body class="body">
     <div class="content">
-
-
       <header class="header">
-
         <aside class="avatar-conteiner">
-          <img class="avatar" src="./assets/images/photo_2023-06-29_12-53-47.jpg" alt="Avatar">
+          <img
+            class="avatar"
+            src="./assets/images/photo_2023-06-29_12-53-47.jpg"
+            alt="Avatar"
+          />
         </aside>
 
         <div class="header__main">
@@ -42,11 +44,7 @@
         </div>
       </header>
 
-
-
       <div class="main-conteiner">
-
-
         <aside class="aside">
           <section class="aducation">
             <h2 class="aducation__title">EDUCATION</h2>
@@ -94,8 +92,6 @@
             </ul>
           </section>
         </aside>
-
-
 
         <main class="main">
           <section class="about">
@@ -177,7 +173,8 @@
           <section class="code">
             <h2 class="code__title">CODE EXAMPLE</h2>
             <div>
-              <pre class="code__example">
+              <div class="code__conteiner">
+                <pre class="code__example">
                         function wingardiumLeviosa(target) {
                         target.style.transition = 'transform 1s';
                         target.style.transform = 'translateY(-100px)';
@@ -197,39 +194,75 @@
                             console.error('An error occurred while casting the spell:', error);
                         });
                         </pre
-              >
+                >
+              </div>
 
               <div class="code__code-visual"></div>
             </div>
 
             <h2 class="code__title">PROJECTS</h2>
-            <div class="code__project"></div>
             <div class="code__project">
               <a href="https://Nelany.github.io/rsschool-cv/">rsschool-cv</a>
             </div>
           </section>
         </main>
-
-
       </div>
-
-
 
       <footer class="footer">
         <aside class="contacts">
           <h2 class="contacts__h2">CONTACTS</h2>
           <ul class="contacts__list">
-            <li class="contacts__contact"><a href="https://t.me/Ne_lan_y"><img src="./assets/images/telegram.svg" alt=""></a></li>
-            <li class="contacts__contact"><a href="mailto:svetasweetka@gmail.com"><img src="./assets/images/email.svg" alt=""></a></li>
-            <li class="contacts__contact"><a href="linkedin.com/in/svetlana-nesterova-5985a3207"><img src="./assets/images/linkedin.svg" alt=""></a></li>
-            <li class="contacts__contact"><a href="https://www.instagram.com/sviatlananes/"><img src="./assets/images/instagraml.svg" alt=""></a></li>
+            <li class="contacts__contact">
+              <a class="contacts__link" href="https://t.me/Ne_lan_y"
+                ><div class="contacts__img">
+                  <img src="./assets/images/telegram.svg" alt="" />
+                </div>
+                <span>telegram</span></a
+              >
+            </li>
+            <li class="contacts__contact">
+              <a class="contacts__link" href="mailto:svetasweetka@gmail.com"
+                ><div class="contacts__img">
+                  <img src="./assets/images/email.svg" alt="" />
+                </div>
+                <span>e-mail</span></a
+              >
+            </li>
+            <li class="contacts__contact">
+              <a
+                class="contacts__link"
+                href="linkedin.com/in/svetlana-nesterova-5985a3207"
+                ><div class="contacts__img">
+                  <img src="./assets/images/linkedin.svg" alt="" />
+                </div>
+                <span>linkedin</span></a
+              >
+            </li>
+            <li class="contacts__contact">
+              <a
+                class="contacts__link"
+                href="https://www.instagram.com/sviatlananes/"
+                ><div class="contacts__img">
+                  <img src="./assets/images/instagraml.svg" alt="" />
+                </div>
+                <span>instagram</span></a
+              >
+            </li>
           </ul>
         </aside>
 
         <div class="footer__main">
-          <a href="https://github.com/Nelany"><img src="./assets/images/github.svg" alt=""></a>
-          <a href="https://rs.school/js/"><img src="./assets/images/rs_school_js.svg" alt=""></a>
-          <p>CREATED IN 2023</p>
+          <div class="footer__item footer__item1">
+            <a href="https://github.com/Nelany"
+              ><img src="./assets/images/github.svg" alt=""
+            /></a>
+          </div>
+          <div class="footer__item-center">
+            <a href="https://rs.school/js/"
+              ><img src="./assets/images/rs_school_js.svg" alt=""
+            /></a>
+          </div>
+          <div class="footer__item"><p>CREATED IN 2023</p></div>
         </div>
       </footer>
     </div>
