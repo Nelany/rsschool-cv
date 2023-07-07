@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // position: absolute;
-    // transform: translate(-50%);
     width: 100%;
     background-color: #180600;
     color: rgb(255, 245, 234);
@@ -105,6 +103,7 @@
     margin-bottom: 15px;
     padding-left: 43px;
     list-style: none;
+    transition: all 0.5s ease;
 }
 
 .aside li::before {
@@ -117,7 +116,7 @@
     top: 50%;
     transform: translatey(-50%);
     background-color: rgb(255, 199, 21);
-    transition: all 0.3s linear;
+    transition: all 0.5s ease;
 }
 
 .aside li:hover::before {
@@ -125,8 +124,14 @@
     background-color: rgb(255, 245, 234);
 }
 
+.aside li:hover {
+    color: rgb(255, 199, 21);
+}
+
 .main {
+    box-sizing: border-box;
     width: 65%;
+    padding: 20px 20px 30px 20px;
     background-color: rgb(255, 245, 234);
     color: #080400;
 }
