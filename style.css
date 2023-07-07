@@ -104,6 +104,12 @@
   top: 50%;
   transform: translatey(-50%);
   background-color: rgb(255, 199, 21);
+  transition: all 0.3s linear;
+}
+
+.aside li:hover::before {
+  width: 30px;
+  background-color: rgb(255, 245, 234);
 }
 
 .main {
