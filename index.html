@@ -175,10 +175,10 @@
             <h2 class="code__title">CODE EXAMPLE</h2>
             <div>
               <div class="code__conteiner">
-                <pre class="code__example">
+                <pre class="code__example" contenteditable="true">
                         function wingardiumLeviosa(target) {
                         target.style.transition = 'transform 1s';
-                        target.style.transform = 'translateY(-100px)';
+                        target.style.transform = 'translateY(-200px)';
                         return new Promise((resolve) => {
                                 setTimeout(() => {
                                 resolve();
@@ -186,7 +186,7 @@
                             });
                         }
                         
-                        const targetElement = document.getElementById('someElement');
+                        const targetElement = document.getElementById('feather');
                         wingardiumLeviosa(targetElement)
                         .then(() => {
                             console.log('Spell successfully cast!');
@@ -198,7 +198,12 @@
                 >
               </div>
 
-              <div class="code__code-visual"></div>
+              <div class="feather-container">
+                <div id="feather" class="feather">
+                  <img class="feather-img" src="./assets/images/png.png" alt="" />
+                </div>
+              </div>
+
             </div>
 
             <h2 id="projects" class="code__title">PROJECTS</h2>
@@ -255,17 +260,18 @@
         <div class="footer__main">
           <div class="footer__item footer__item1">
             <a href="https://github.com/Nelany"
-              ><img src="./assets/images/github.svg" alt=""
+              ><img src="./assets/images/github.svg" alt="link github"
             /></a>
           </div>
           <div class="footer__item-center">
             <a href="https://rs.school/js/"
-              ><img src="./assets/images/rs_school_js.svg" alt=""
+              ><img src="./assets/images/rs_school_js.svg" alt="link rs_school"
             /></a>
           </div>
           <div class="footer__item"><p>CREATED IN 2023</p></div>
         </div>
       </footer>
     </div>
+    <script src=".//script.js"></script>
   </body>
 </html>
