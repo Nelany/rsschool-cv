@@ -185,8 +185,14 @@ a:hover {
   position: relative;
   width: 100%;
   height: 300px;
+  margin-bottom: 20px;
+  padding-top: 10px;
   background-color: rgb(8, 4, 0);
+  color: antiquewhite;
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=26747);
+}
+.code .feather-container span {
+  margin-left: 10px;
 }
 .code .feather {
   position: absolute;
