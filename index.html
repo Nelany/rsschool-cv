@@ -171,24 +171,25 @@
             <div>
               <div class="code__conteiner">
                 <pre class="code__example" contenteditable="true">
-                        function wingardiumLeviosa(target) {
-                        target.style.transition = 'transform 1s';
-                        target.style.transform = 'translateY(-200px)';
-                        return new Promise((resolve) => {
-                                setTimeout(() => {
-                                resolve();
-                                }, 1000);
-                            });
-                        }
                         
-                        const targetElement = document.getElementById('feather');
-                        wingardiumLeviosa(targetElement)
-                        .then(() => {
-                            console.log('Spell successfully cast!');
-                        })
-                        .catch((error) => {
-                            console.error('An error occurred while casting the spell:', error);
-                        });
+function wingardiumLeviosa(target) {
+  target.style.transition = 'transform 1s';
+  target.style.transform = 'translateY(-200px)';
+  return new Promise(function(resolve) {
+  setTimeout(function() {
+  resolve();
+  }, 1000);
+  });
+  }
+  
+  const targetElement = document.getElementById('feather');
+  wingardiumLeviosa(targetElement)
+  .then(function() {
+  console.log('Spell successfully cast!');
+  })
+  .catch(function(error) {
+  console.error('An error occurred while casting the spell:', error);
+  });
                         </pre>
               </div>
 
